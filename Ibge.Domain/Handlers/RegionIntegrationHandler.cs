@@ -5,14 +5,14 @@ using Ibge.Domain.Entities;
 using Ibge.Domain.Handlers.Contract;
 using Ibge.Domain.Repositories;
 
-namespace Ibge.Domain.Facades
+namespace Ibge.Domain.Handlers
 {
-    public class RegionIntegrationFacade
+    public class RegionIntegrationHandler
     {
         private IRegionIbgeRepository _externalRepository;
         private IRegionRepository _repository;
 
-        public RegionIntegrationFacade(
+        public RegionIntegrationHandler(
             IRegionIbgeRepository externalRepository,
             IRegionRepository repository)
         {

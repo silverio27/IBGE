@@ -1,6 +1,6 @@
-namespace Ibge.Domain.Dto
+namespace Ibge.Domain.Commands
 {
-    public class RegionDto
+    public class RegionCommand
     {
         public int id { get; set; }
         public string sigla { get; set; }

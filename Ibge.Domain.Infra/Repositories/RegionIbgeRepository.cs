@@ -5,7 +5,7 @@ using Ibge.Domain.Entities;
 using Ibge.Domain.Repositories;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using Ibge.Domain.Dto;
+using Ibge.Domain.Commands;
 using Ibge.Domain.Mapping;
 using System.Linq;
 
@@ -27,7 +27,7 @@ namespace Ibge.Domain.Infra.Repositories
             if (response.IsSuccessStatusCode)
             {
                 var content = await response.Content.ReadAsStringAsync();
-                var contentDeserialize = JsonSerializer.Deserialize<IEnumerable<RegionDto>>(content);                
+                var contentDeserialize = JsonSerializer.Deserialize<IEnumerable<RegionCommand>>(content);                
                 return AutoMapperConfiguration.Mapper.Map<IEnumerable<Region>>(contentDeserialize);
             }
 

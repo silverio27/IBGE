@@ -1,5 +1,5 @@
 using AutoMapper;
-using Ibge.Domain.Dto;
+using Ibge.Domain.Commands;
 using Ibge.Domain.Entities;
 
 namespace Ibge.Domain.Mapping
@@ -8,7 +8,7 @@ namespace Ibge.Domain.Mapping
     {
         public RegionProfile()
         {
-            CreateMap<Region, RegionDto>()
+            CreateMap<Region, RegionCommand>()
             .ForMember(dto => dto.id, map => map.MapFrom(src => src.Id))
             .ForMember(dto => dto.sigla, map => map.MapFrom(src => src.Initials))
             .ForMember(dto => dto.nome, map => map.MapFrom(src => src.Name))
