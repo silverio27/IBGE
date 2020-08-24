@@ -1,0 +1,3 @@
+C:\Users\Lucas\Teste\IBGE\Ibge.Domain.ConsoleApp\obj\Debug\netcoreapp3.1\Ibge.Domain.ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\Lucas\Teste\IBGE\Ibge.Domain.ConsoleApp\obj\Debug\netcoreapp3.1\Ibge.Domain.ConsoleApp.AssemblyInfoInputs.cache
+C:\Users\Lucas\Teste\IBGE\Ibge.Domain.ConsoleApp\obj\Debug\netcoreapp3.1\Ibge.Domain.ConsoleApp.AssemblyInfo.cs

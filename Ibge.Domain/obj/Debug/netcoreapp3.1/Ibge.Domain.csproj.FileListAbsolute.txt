@@ -1,0 +1,9 @@
+C:\Users\Lucas\Teste\IBGE\Ibge.Domain\bin\Debug\netcoreapp3.1\Ibge.Domain.deps.json
+C:\Users\Lucas\Teste\IBGE\Ibge.Domain\bin\Debug\netcoreapp3.1\Ibge.Domain.dll
+C:\Users\Lucas\Teste\IBGE\Ibge.Domain\bin\Debug\netcoreapp3.1\Ibge.Domain.pdb
+C:\Users\Lucas\Teste\IBGE\Ibge.Domain\obj\Debug\netcoreapp3.1\Ibge.Domain.csprojAssemblyReference.cache
+C:\Users\Lucas\Teste\IBGE\Ibge.Domain\obj\Debug\netcoreapp3.1\Ibge.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Lucas\Teste\IBGE\Ibge.Domain\obj\Debug\netcoreapp3.1\Ibge.Domain.AssemblyInfoInputs.cache
+C:\Users\Lucas\Teste\IBGE\Ibge.Domain\obj\Debug\netcoreapp3.1\Ibge.Domain.AssemblyInfo.cs
+C:\Users\Lucas\Teste\IBGE\Ibge.Domain\obj\Debug\netcoreapp3.1\Ibge.Domain.dll
+C:\Users\Lucas\Teste\IBGE\Ibge.Domain\obj\Debug\netcoreapp3.1\Ibge.Domain.pdb

@@ -1,0 +1,9 @@
+C:\Users\Lucas\Teste\IBGE\Ibge.Domain\bin\Debug\netstandard2.0\Ibge.Domain.deps.json
+C:\Users\Lucas\Teste\IBGE\Ibge.Domain\bin\Debug\netstandard2.0\Ibge.Domain.dll
+C:\Users\Lucas\Teste\IBGE\Ibge.Domain\bin\Debug\netstandard2.0\Ibge.Domain.pdb
+C:\Users\Lucas\Teste\IBGE\Ibge.Domain\obj\Debug\netstandard2.0\Ibge.Domain.csprojAssemblyReference.cache
+C:\Users\Lucas\Teste\IBGE\Ibge.Domain\obj\Debug\netstandard2.0\Ibge.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Lucas\Teste\IBGE\Ibge.Domain\obj\Debug\netstandard2.0\Ibge.Domain.AssemblyInfoInputs.cache
+C:\Users\Lucas\Teste\IBGE\Ibge.Domain\obj\Debug\netstandard2.0\Ibge.Domain.AssemblyInfo.cs
+C:\Users\Lucas\Teste\IBGE\Ibge.Domain\obj\Debug\netstandard2.0\Ibge.Domain.dll
+C:\Users\Lucas\Teste\IBGE\Ibge.Domain\obj\Debug\netstandard2.0\Ibge.Domain.pdb

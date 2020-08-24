@@ -1,0 +1,14 @@
+using Ibge.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
+
+namespace Ibge.Domain.Infra.Contexts
+{
+    public class DataContext : DbContext
+    {
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        { 
+            optionsBuilder.UseSqlServer(@"Data Source=DESKTOP-B88NHP9\SQLEXPRESS2017;Initial Catalog=IBGE;Uid=sa;Pwd=N13tzsche");
+        }
+        public DbSet<Region> Region { get; set; }
+    }
+}
