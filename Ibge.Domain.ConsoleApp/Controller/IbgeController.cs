@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Ibge.Domain.Entities;
-using Ibge.Domain.Facades;
+using Ibge.Domain.Handlers;
 using Ibge.Domain.Handlers.Contract;
 using Ibge.Domain.Infra.Contexts;
 using Ibge.Domain.Infra.Repositories;
@@ -49,7 +49,7 @@ namespace Ibge.Domain.ConsoleApp.Controller
             HttpClient client = new HttpClient();
             RegionIbgeRepository externalRepository = new RegionIbgeRepository(client);
 
-            var facade = new RegionIntegrationFacade(externalRepository, repository);
+            var facade = new RegionIntegrationHandler(externalRepository, repository);
             var result = await facade.Execute();
             Console.WriteLine("{0}, {1}", result.Success, result.Message);
             foreach (var item in ((SuccessResult<IEnumerable<Region>>)result).Data)
