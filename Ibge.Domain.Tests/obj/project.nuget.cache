@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "yBw5WP04ZhPe4t6JxjKIFrSZGPHNv+VxHyeFZ55ty9JGlneEZG2mDmyiis1t6/n+LM7EBhZX9qfNlBblV+Fkyg==",
+  "dgSpecHash": "bnhxsOBDQC5yORVQpCskAvAFmx2b+UihJPFOq0zMjYcJcS968sFsZ6gbYvnQlJQc3LPEEhAnXPjJLYuTIY3z7g==",
   "success": true,
   "projectFilePath": "C:\\Users\\Lucas\\Teste\\IBGE\\Ibge.Domain.Tests\\Ibge.Domain.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lucas\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\Lucas\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
+    "C:\\Users\\Lucas\\.nuget\\packages\\flunt\\1.0.5\\flunt.1.0.5.nupkg.sha512",
     "C:\\Users\\Lucas\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
     "C:\\Users\\Lucas\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Lucas\\.nuget\\packages\\microsoft.net.test.sdk\\16.5.0\\microsoft.net.test.sdk.16.5.0.nupkg.sha512",

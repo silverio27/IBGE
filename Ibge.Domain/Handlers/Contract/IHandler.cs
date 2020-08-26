@@ -1,9 +1,10 @@
 using System.Collections.Generic;
+using Ibge.Domain.Commands.Contracts;
 
 namespace Ibge.Domain.Handlers.Contract
 {
-    public interface IHandler<T>
+    public interface IHandler<T> where T : ICommand
     {
-        IGenericResult Handle(T command);
+        HandlerResult<T> Handle(T command );
     }
 }

@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "sMZEOcLbv6Qk/XNKiDEU44GpDHP/8dh2zcsA3dwW4FF8MbVDtAEIQKSTwhLbjF0xg9HOXA+HbV/Y01LHSJSr3w==",
+  "dgSpecHash": "pIRS+Bz1EhUyTNEOe6twb/w3kQgK/lr9g1F+f9vxt2W9vXvhyl6F7j9cprI3RsVH3p27viADDsISCdapv/vZgA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Lucas\\Teste\\IBGE\\Ibge.Domain.Infra\\Ibge.Domain.Infra.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lucas\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
+    "C:\\Users\\Lucas\\.nuget\\packages\\flunt\\1.0.5\\flunt.1.0.5.nupkg.sha512",
     "C:\\Users\\Lucas\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Lucas\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\Lucas\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

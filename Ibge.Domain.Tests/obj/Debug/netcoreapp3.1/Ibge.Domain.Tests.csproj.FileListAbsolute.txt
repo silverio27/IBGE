@@ -7,6 +7,7 @@ C:\Users\Lucas\Teste\IBGE\Ibge.Domain.Tests\bin\Debug\netcoreapp3.1\Ibge.Domain.
 C:\Users\Lucas\Teste\IBGE\Ibge.Domain.Tests\bin\Debug\netcoreapp3.1\Ibge.Domain.Tests.dll
 C:\Users\Lucas\Teste\IBGE\Ibge.Domain.Tests\bin\Debug\netcoreapp3.1\Ibge.Domain.Tests.pdb
 C:\Users\Lucas\Teste\IBGE\Ibge.Domain.Tests\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\Lucas\Teste\IBGE\Ibge.Domain.Tests\bin\Debug\netcoreapp3.1\Flunt.dll
 C:\Users\Lucas\Teste\IBGE\Ibge.Domain.Tests\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 C:\Users\Lucas\Teste\IBGE\Ibge.Domain.Tests\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.CoreUtilities.dll
 C:\Users\Lucas\Teste\IBGE\Ibge.Domain.Tests\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.PlatformAbstractions.dll

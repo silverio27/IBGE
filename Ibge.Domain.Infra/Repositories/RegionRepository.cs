@@ -22,6 +22,11 @@ namespace Ibge.Domain.Infra.Repositories
             _context.SaveChanges();
         }
 
+        public bool Exist(Region region)
+        {
+            return _context.Region.Any(RegionQueries.GetRegionById(region.Id));
+        }
+
         public IEnumerable<Region> Get()
         {
             return _context.Region.ToList();

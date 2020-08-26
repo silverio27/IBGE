@@ -1,41 +1,44 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
-using Ibge.Domain.Entities;
+using Flunt.Notifications;
+using Ibge.Domain.Commands;
 using Ibge.Domain.Handlers.Contract;
 using Ibge.Domain.Repositories;
 
 namespace Ibge.Domain.Handlers
 {
-    public class RegionIntegrationHandler
+    public class RegionIntegrationHandler : Notifiable, IExecute<RegionCommand>
     {
-        private IRegionIbgeRepository _externalRepository;
-        private IRegionRepository _repository;
+        IRegionIbgeRepository regionIbgeRepository;
+        IHandler<RegionCommand> handler;
 
         public RegionIntegrationHandler(
-            IRegionIbgeRepository externalRepository,
-            IRegionRepository repository)
+            IRegionIbgeRepository regionIbgeRepository,
+            IHandler<RegionCommand> handler)
         {
-            _externalRepository = externalRepository;
-            _repository = repository;
+            this.regionIbgeRepository = regionIbgeRepository;
+            this.handler = handler;
         }
 
-        public async Task<IGenericResult> Execute()
+
+
+        public async Task<IEnumerable<HandlerResult<RegionCommand>>> Execute()
         {
-            try
+            var response = new List<HandlerResult<RegionCommand>>();
+            var externalRegions = await regionIbgeRepository.Get();
+
+            if (!externalRegions.Any())
             {
-                var externalRegions = await _externalRepository.Get();
-
-                foreach (var item in externalRegions)
-                    _repository.Create(item);
-
-                return new SuccessResult<IEnumerable<Region>>("Regiões incluídas", externalRegions);
+                AddNotification("API IBGE", "A api não retornou dados");
+                return response;
             }
-            catch (Exception e)
+
+            foreach (var item in externalRegions)
             {
-
-                return new FailResult( "Não foi possível incluir as regiões", e);
+                response.Add(handler.Handle(item));
             }
+            return response;
         }
     }
 }

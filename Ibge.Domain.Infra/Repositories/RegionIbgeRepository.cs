@@ -21,17 +21,16 @@ namespace Ibge.Domain.Infra.Repositories
             _httpClient = httpClient;
         }
 
-        public async Task<IEnumerable<Region>> Get()
+        public async Task<IEnumerable<RegionCommand>> Get()
         {
             HttpResponseMessage response = await _httpClient.GetAsync(url);
             if (response.IsSuccessStatusCode)
             {
                 var content = await response.Content.ReadAsStringAsync();
-                var contentDeserialize = JsonSerializer.Deserialize<IEnumerable<RegionCommand>>(content);                
-                return AutoMapperConfiguration.Mapper.Map<IEnumerable<Region>>(contentDeserialize);
+                return JsonSerializer.Deserialize<IEnumerable<RegionCommand>>(content);
             }
 
-            return null;
+            return new List<RegionCommand>();
         }
     }
 }

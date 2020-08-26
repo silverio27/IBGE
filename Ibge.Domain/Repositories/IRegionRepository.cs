@@ -9,5 +9,6 @@ namespace Ibge.Domain.Repositories
          IEnumerable<Region> Get();
          Region Get(int id);
          void Create(Region region);
+         bool Exist(Region region);
     }
 }

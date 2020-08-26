@@ -1,10 +1,10 @@
 namespace Ibge.Domain.Handlers.Contract
 {
-    public class SuccessResult<T> : IGenericResult
+    public class HandlerResult<T> 
     {
-        public SuccessResult(string message, T data)
+        public HandlerResult(string message, T data, bool success = true)
         {
-            Success = true;
+            Success = success;
             Message = message;
             Data = data;
         }
