@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Ibge.Domain.Commands;
 using Ibge.Domain.Entities;
 using Ibge.Domain.Handlers;
 using Ibge.Domain.Handlers.Contract;
@@ -14,30 +15,26 @@ namespace Ibge.Domain.ConsoleApp.Controller
     {
         public static async Task RegionIbgeRequestManualTest()
         {
-            try
-            {
-                HttpClient client = new HttpClient();
-                RegionIbgeRepository repository = new RegionIbgeRepository(client);
-                var response = await repository.Get();
-                Console.WriteLine("Retorno da api do IBGE");
-                foreach (var item in response)
-                    Console.WriteLine("{0}, {1}, {2}", item.Id, item.Name, item.Initials);
-            }
-            catch (Exception e)
-            {
 
-                Console.WriteLine(e.Message);
-            }
+            HttpClient client = new HttpClient();
+            RegionIbgeRepository repository = new RegionIbgeRepository(client);
+            var response = await repository.Get();
+            Console.WriteLine("Retorno da api do IBGE");
+            foreach (var item in response)
+                Console.WriteLine("{0}, {1}, {2}", item.id, item.nome, item.sigla);
+
+
         }
 
         public static void CreateRegionManualTest()
         {
             var context = new DataContext();
             var repository = new RegionRepository(context);
-            var region = new Region(1, "I", "N");
+            var handler = new RegionHandler(repository);
+            var region = new RegionCommand(1, "I", "N");
 
-            repository.Create(region);
-            Console.WriteLine("Região criada");
+            var res = handler.Handle(region);
+            Console.WriteLine("Comando válido: {0}, Mensagem: {1}", res.Success, res.Message);
 
         }
 
@@ -48,14 +45,14 @@ namespace Ibge.Domain.ConsoleApp.Controller
 
             HttpClient client = new HttpClient();
             RegionIbgeRepository externalRepository = new RegionIbgeRepository(client);
+            var handler = new RegionHandler(repository);
 
-            var facade = new RegionIntegrationHandler(externalRepository, repository);
-            var result = await facade.Execute();
-            Console.WriteLine("{0}, {1}", result.Success, result.Message);
-            foreach (var item in ((SuccessResult<IEnumerable<Region>>)result).Data)
-            {
-                Console.WriteLine(item.Name);
-            };
+            var handle = new RegionIntegrationHandler(externalRepository, handler);
+            var result = await handle.Execute();
+            foreach (var item in result)            
+                Console.WriteLine("incluído: {0}, Message: {1}, Nome: {2}", item.Success, item.Message, item.Data.nome);
+            
+
 
         }
     }
