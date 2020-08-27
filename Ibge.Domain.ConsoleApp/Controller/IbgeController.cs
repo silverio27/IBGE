@@ -2,10 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Ibge.Domain.Commands;
-using Ibge.Domain.Entities;
-using Ibge.Domain.Handlers;
-using Ibge.Domain.Handlers.Contract;
+using Ibge.Domain.RegionIbgeContext.Commands;
+using Ibge.Domain.RegionIbgeContext.Entities;
+using Ibge.Domain.RegionIbgeContext.Handlers;
+using Ibge.Domain.RegionIbgeContext.Handlers.Contract;
 using Ibge.Domain.Infra.Contexts;
 using Ibge.Domain.Infra.Repositories;
 

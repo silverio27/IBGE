@@ -2,11 +2,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Flunt.Notifications;
-using Ibge.Domain.Commands;
-using Ibge.Domain.Handlers.Contract;
-using Ibge.Domain.Repositories;
+using Ibge.Domain.RegionIbgeContext.Commands;
+using Ibge.Domain.RegionIbgeContext.Handlers.Contract;
+using Ibge.Domain.RegionIbgeContext.Repositories;
 
-namespace Ibge.Domain.Handlers
+namespace Ibge.Domain.RegionIbgeContext.Handlers
 {
     public class RegionIntegrationHandler : Notifiable, IExecute<RegionCommand>
     {

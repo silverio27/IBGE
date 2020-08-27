@@ -1,13 +1,9 @@
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Ibge.Domain.Entities;
-using Ibge.Domain.Repositories;
+using Ibge.Domain.RegionIbgeContext.Repositories;
 using System.Text.Json;
-using System.Text.Json.Serialization;
-using Ibge.Domain.Commands;
-using Ibge.Domain.Mapping;
-using System.Linq;
+using Ibge.Domain.RegionIbgeContext.Commands;
 
 namespace Ibge.Domain.Infra.Repositories
 {

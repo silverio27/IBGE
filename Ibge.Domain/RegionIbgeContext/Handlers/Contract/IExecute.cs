@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Ibge.Domain.Commands.Contracts;
+using Ibge.Domain.RegionIbgeContext.Commands.Contracts;
 
-namespace Ibge.Domain.Handlers.Contract
+namespace Ibge.Domain.RegionIbgeContext.Handlers.Contract
 {
     public interface IExecute<T>  where T: ICommand
     {

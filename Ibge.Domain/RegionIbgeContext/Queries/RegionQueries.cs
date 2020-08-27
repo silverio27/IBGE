@@ -1,8 +1,8 @@
 using System;
 using System.Linq.Expressions;
-using Ibge.Domain.Entities;
+using Ibge.Domain.RegionIbgeContext.Entities;
 
-namespace Ibge.Domain.Queries
+namespace Ibge.Domain.RegionIbgeContext.Queries
 {
     public static class RegionQueries
     {

@@ -1,7 +1,7 @@
 using System;
 using AutoMapper;
 
-namespace Ibge.Domain.Mapping
+namespace Ibge.Domain.RegionIbgeContext.Mapping
 {
     public class AutoMapperConfiguration
     {

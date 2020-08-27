@@ -1,4 +1,4 @@
-namespace Ibge.Domain.Handlers.Contract
+namespace Ibge.Domain.RegionIbgeContext.Handlers.Contract
 {
     public class HandlerResult<T> 
     {

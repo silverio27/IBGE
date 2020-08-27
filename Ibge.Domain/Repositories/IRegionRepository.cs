@@ -1,8 +1,7 @@
-using System;
 using System.Collections.Generic;
-using Ibge.Domain.Entities;
+using Ibge.Domain.RegionIbgeContext.Entities;
 
-namespace Ibge.Domain.Repositories
+namespace Ibge.Domain.RegionIbgeContext.Repositories
 {
     public interface IRegionRepository
     {

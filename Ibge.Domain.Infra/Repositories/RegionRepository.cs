@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
-using Ibge.Domain.Entities;
+using Ibge.Domain.RegionIbgeContext.Entities;
 using Ibge.Domain.Infra.Contexts;
-using Ibge.Domain.Queries;
-using Ibge.Domain.Repositories;
+using Ibge.Domain.RegionIbgeContext.Queries;
+using Ibge.Domain.RegionIbgeContext.Repositories;
 
 namespace Ibge.Domain.Infra.Repositories
 {

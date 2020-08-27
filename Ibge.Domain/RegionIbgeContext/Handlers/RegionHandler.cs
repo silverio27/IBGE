@@ -1,12 +1,11 @@
-using System.Collections.Generic;
 using Flunt.Notifications;
-using Ibge.Domain.Commands;
-using Ibge.Domain.Entities;
-using Ibge.Domain.Handlers.Contract;
-using Ibge.Domain.Mapping;
-using Ibge.Domain.Repositories;
+using Ibge.Domain.RegionIbgeContext.Commands;
+using Ibge.Domain.RegionIbgeContext.Entities;
+using Ibge.Domain.RegionIbgeContext.Handlers.Contract;
+using Ibge.Domain.RegionIbgeContext.Mapping;
+using Ibge.Domain.RegionIbgeContext.Repositories;
 
-namespace Ibge.Domain.Handlers
+namespace Ibge.Domain.RegionIbgeContext.Handlers
 {
     public class RegionHandler : Notifiable, IHandler<RegionCommand>
     {

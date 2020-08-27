@@ -1,8 +1,8 @@
 using AutoMapper;
-using Ibge.Domain.Commands;
-using Ibge.Domain.Entities;
+using Ibge.Domain.RegionIbgeContext.Commands;
+using Ibge.Domain.RegionIbgeContext.Entities;
 
-namespace Ibge.Domain.Mapping
+namespace Ibge.Domain.RegionIbgeContext.Mapping
 {
     public class RegionProfile : Profile
     {

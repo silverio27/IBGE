@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Ibge.Domain.Entities
+namespace Ibge.Domain.RegionIbgeContext.Entities
 {
     public class Region
     {

@@ -1,4 +1,4 @@
-using Ibge.Domain.Entities;
+using Ibge.Domain.RegionIbgeContext.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace Ibge.Domain.Infra.Contexts
