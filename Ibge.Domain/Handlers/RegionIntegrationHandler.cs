@@ -21,8 +21,6 @@ namespace Ibge.Domain.Handlers
             this.handler = handler;
         }
 
-
-
         public async Task<IEnumerable<HandlerResult<RegionCommand>>> Execute()
         {
             var response = new List<HandlerResult<RegionCommand>>();

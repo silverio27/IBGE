@@ -23,7 +23,7 @@ namespace Ibge.Domain.Infra.Repositories
 
         public async Task<IEnumerable<RegionCommand>> Get()
         {
-            HttpResponseMessage response = await _httpClient.GetAsync(url);
+            var response = await _httpClient.GetAsync(url);
             if (response.IsSuccessStatusCode)
             {
                 var content = await response.Content.ReadAsStringAsync();
