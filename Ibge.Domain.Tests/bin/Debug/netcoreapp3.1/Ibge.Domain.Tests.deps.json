@@ -10,8 +10,10 @@
         "dependencies": {
           "Ibge.Domain": "1.0.0",
           "Ibge.Domain.Infra": "1.0.0",
+          "Microsoft.EntityFrameworkCore.InMemory": "3.1.7",
           "Microsoft.NET.Test.Sdk": "16.5.0",
           "coverlet.collector": "1.2.0",
+          "coverlet.msbuild": "2.9.0",
           "xunit": "2.4.0",
           "xunit.runner.visualstudio": "2.4.0"
         },
@@ -32,6 +34,7 @@
         }
       },
       "coverlet.collector/1.2.0": {},
+      "coverlet.msbuild/2.9.0": {},
       "Flunt/1.0.5": {
         "runtime": {
           "lib/netstandard2.0/Flunt.dll": {
@@ -127,6 +130,17 @@
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/3.1.7": {},
+      "Microsoft.EntityFrameworkCore.InMemory/3.1.7": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "3.1.7"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "assemblyVersion": "3.1.7.0",
+            "fileVersion": "3.100.720.37109"
+          }
+        }
+      },
       "Microsoft.EntityFrameworkCore.Relational/3.1.7": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "3.1.7"
@@ -1422,6 +1436,13 @@
       "path": "coverlet.collector/1.2.0",
       "hashPath": "coverlet.collector.1.2.0.nupkg.sha512"
     },
+    "coverlet.msbuild/2.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-t+2du2q+z0FFklyP6HGSoKssRj0NequInLvgQ9rtxHskbgmAENxgt83eTQSRyxJ8DAThW8WOYhOuhuXIs//ZyA==",
+      "path": "coverlet.msbuild/2.9.0",
+      "hashPath": "coverlet.msbuild.2.9.0.nupkg.sha512"
+    },
     "Flunt/1.0.5": {
       "type": "package",
       "serviceable": true,
@@ -1484,6 +1505,13 @@
       "sha512": "sha512-zSh3QF/Kz8fdVgyStQ1HYUGFDRqFbUR1UBpfa8tUuB0OutYab9R4aYdjkD8i9w9P5VZyHXqQNglh2cQHBFLtjg==",
       "path": "microsoft.entityframeworkcore.analyzers/3.1.7",
       "hashPath": "microsoft.entityframeworkcore.analyzers.3.1.7.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.InMemory/3.1.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tzNo8eJVLq6NkJ5+pd2EEqtEM5tS1GQpd0btZtIOoGyJwCivv2MgT2eQEAbmyfcCAwnizxZnCAQaEeef6+uWDw==",
+      "path": "microsoft.entityframeworkcore.inmemory/3.1.7",
+      "hashPath": "microsoft.entityframeworkcore.inmemory.3.1.7.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Relational/3.1.7": {
       "type": "package",

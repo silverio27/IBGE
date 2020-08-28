@@ -142,3 +142,4 @@ C:\Users\Lucas\Teste\IBGE\Ibge.Domain.Tests\bin\Debug\netcoreapp3.1\runtimes\win
 C:\Users\Lucas\Teste\IBGE\Ibge.Domain.Tests\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Lucas\Teste\IBGE\Ibge.Domain.Tests\bin\Debug\netcoreapp3.1\Ibge.Domain.Infra.dll
 C:\Users\Lucas\Teste\IBGE\Ibge.Domain.Tests\bin\Debug\netcoreapp3.1\Ibge.Domain.Infra.pdb
+C:\Users\Lucas\Teste\IBGE\Ibge.Domain.Tests\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll

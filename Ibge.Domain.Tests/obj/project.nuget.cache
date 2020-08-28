@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "FjeerHPbWIDkxF+0eREkgw2AsdTecJG54xIJyqxC5vsVyizhyyS2vBoswRSvOqL5+IuEEjAFQ6mWPYf86v6INA==",
+  "dgSpecHash": "LPyAkovzi/hzHOMl5KD0MmV2uYx+CUY03Ayd2KuHidDC5U33aMahYyG8B3ElSJSjoBw410FeAofZqBYpygKjLQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Lucas\\Teste\\IBGE\\Ibge.Domain.Tests\\Ibge.Domain.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lucas\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\Lucas\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
+    "C:\\Users\\Lucas\\.nuget\\packages\\coverlet.msbuild\\2.9.0\\coverlet.msbuild.2.9.0.nupkg.sha512",
     "C:\\Users\\Lucas\\.nuget\\packages\\flunt\\1.0.5\\flunt.1.0.5.nupkg.sha512",
     "C:\\Users\\Lucas\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Lucas\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
