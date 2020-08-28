@@ -8,7 +8,7 @@ namespace Ibge.Domain.RegionIbgeContext.Commands
     {
         private RegionCommand()
         {
-            
+
         }
         public RegionCommand(int id, string sigla, string nome)
         {
@@ -23,12 +23,12 @@ namespace Ibge.Domain.RegionIbgeContext.Commands
 
         public void Validate()
         {
-            new Contract()
-                .Requires()
-                .IsGreaterThan(id, 0, nameof(id), "Identidade tem que ser maior que {1}.")
-                .HasMinLen(sigla, 1, nameof(sigla), "A sigla tem que ter pelo menos {1} letras.")
-                .HasMinLen(nome, 3, nameof(nome), "O nome da região precisa ter pelo menos {3} letras.");
-
+            AddNotifications(
+                new Contract()
+                    .Requires()
+                    .IsGreaterThan(id, 0, nameof(id), "Identidade tem que ser maior que 0.")
+                    .HasMinLen(sigla, 1, nameof(sigla), "A sigla tem que ter pelo menos 1 letra.")
+                    .HasMinLen(nome, 3, nameof(nome), "O nome da região precisa ter pelo menos 3 letras."));
         }
     }
 }

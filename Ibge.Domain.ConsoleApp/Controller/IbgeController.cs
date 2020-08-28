@@ -8,6 +8,7 @@ using Ibge.Domain.RegionIbgeContext.Handlers;
 using Ibge.Domain.RegionIbgeContext.Handlers.Contract;
 using Ibge.Domain.Infra.Contexts;
 using Ibge.Domain.Infra.Repositories;
+using Ibge.Domain.RegionIbgeContext.Enums;
 
 namespace Ibge.Domain.ConsoleApp.Controller
 {
@@ -15,9 +16,7 @@ namespace Ibge.Domain.ConsoleApp.Controller
     {
         public static async Task RegionIbgeRequestManualTest()
         {
-
-            HttpClient client = new HttpClient();
-            RegionIbgeRepository repository = new RegionIbgeRepository(client);
+            RegionIbgeRepository repository = new RegionIbgeRepository(IbgeEndPoints.RegionUrl);
             var response = await repository.Get();
             Console.WriteLine("Retorno da api do IBGE");
             foreach (var item in response)
@@ -40,17 +39,18 @@ namespace Ibge.Domain.ConsoleApp.Controller
 
         public static async Task ExecuteFacadeManualTest()
         {
+
+            var externalRepository = new RegionIbgeRepository(IbgeEndPoints.RegionUrl);
+            
             var context = new DataContext();
             var repository = new RegionRepository(context);
-
-            HttpClient client = new HttpClient();
-            RegionIbgeRepository externalRepository = new RegionIbgeRepository(client);
             var handler = new RegionHandler(repository);
 
             var handle = new RegionIntegrationHandler(externalRepository, handler);
             var result = await handle.Execute();
             foreach (var item in result)            
-                Console.WriteLine("incluído: {0}, Message: {1}, Nome: {2}", item.Success, item.Message, item.Data.nome);
+                Console.WriteLine("incluído: {0}, Message: {1}, Nome: {2}",
+                    item.Success, item.Message, item.Data.nome);
             
 
 

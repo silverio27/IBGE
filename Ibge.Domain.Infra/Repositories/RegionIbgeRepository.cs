@@ -4,22 +4,24 @@ using System.Threading.Tasks;
 using Ibge.Domain.RegionIbgeContext.Repositories;
 using System.Text.Json;
 using Ibge.Domain.RegionIbgeContext.Commands;
+using Ibge.Domain.RegionIbgeContext.Enums;
 
 namespace Ibge.Domain.Infra.Repositories
 {
     public class RegionIbgeRepository : IRegionIbgeRepository
     {
         HttpClient _httpClient;
-        const string url = "https://servicodados.ibge.gov.br/api/v1/localidades/regioes";
+        private string _url;
 
-        public RegionIbgeRepository(HttpClient httpClient)
+        public RegionIbgeRepository(IbgeEndPoints url)
         {
-            _httpClient = httpClient;
+            _httpClient = new HttpClient();
+            _url = url.Value;
         }
 
         public async Task<IEnumerable<RegionCommand>> Get()
         {
-            var response = await _httpClient.GetAsync(url);
+            var response = await _httpClient.GetAsync(_url);
             if (response.IsSuccessStatusCode)
             {
                 var content = await response.Content.ReadAsStringAsync();
