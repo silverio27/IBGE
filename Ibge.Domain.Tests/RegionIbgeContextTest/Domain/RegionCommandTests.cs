@@ -2,7 +2,7 @@ using System.Linq;
 using Ibge.Domain.RegionIbgeContext.Commands;
 using Xunit;
 
-namespace Ibge.Domain.Tests.RegionIbgeContextTest
+namespace Ibge.Domain.Tests.RegionIbgeContextTest.Domain
 {
     public class RegionCommandTests
     {

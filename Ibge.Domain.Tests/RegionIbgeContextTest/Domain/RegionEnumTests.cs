@@ -1,7 +1,7 @@
 using Ibge.Domain.RegionIbgeContext.Enums;
 using Xunit;
 
-namespace Ibge.Domain.Tests.RegionIbgeContextTest
+namespace Ibge.Domain.Tests.RegionIbgeContextTest.Domain
 {
     public class RegionEnumTests
     {

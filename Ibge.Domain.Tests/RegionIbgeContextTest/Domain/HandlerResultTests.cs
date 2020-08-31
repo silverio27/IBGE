@@ -1,11 +1,11 @@
 using Ibge.Domain.RegionIbgeContext.Handlers.Contract;
 using Xunit;
 
-namespace Ibge.Domain.Tests.RegionIbgeContextTest
-{
+namespace Ibge.Domain.Tests.RegionIbgeContextTest.Domain
+{       
     public class HandlerResultTests
     {
-        [Fact]
+        [Fact]        
         public void DadoUmResultadoComSucesso()
         {
             var result = new HandlerResult<dynamic>("Tudo certo", new { Valor = 1 });

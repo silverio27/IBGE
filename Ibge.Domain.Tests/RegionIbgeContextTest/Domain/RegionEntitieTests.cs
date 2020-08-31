@@ -1,7 +1,7 @@
 using Ibge.Domain.RegionIbgeContext.Entities;
 using Xunit;
 
-namespace Ibge.Domain.Tests.RegionIbgeContextTest
+namespace Ibge.Domain.Tests.RegionIbgeContextTest.Domain
 {
     public class RegionEntitieTests
     {

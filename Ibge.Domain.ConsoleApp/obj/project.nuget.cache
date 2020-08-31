@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z5WKJDnLuOFxcAqnpi6iWqlIuhIgBaKis4dekVtdyPXFWO25aJUEXxkkm/j0ZYYX2PCesUSFdLo0IUp7mQ/WJA==",
+  "dgSpecHash": "9HkK+jipERrTPNw/Eb1fws077yi7zIsZ0vNQIItdR0mZzS3x92fimd6l4SjLw+QkGCyoqQluLcA18m1JLjbIQA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lucas\\Teste\\IBGE\\Ibge.Domain.ConsoleApp\\Ibge.Domain.ConsoleApp.csproj",
+  "projectFilePath": "c:\\Users\\Lucas\\Teste\\IBGE\\Ibge.Domain.ConsoleApp\\Ibge.Domain.ConsoleApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lucas\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\Lucas\\.nuget\\packages\\flunt\\1.0.5\\flunt.1.0.5.nupkg.sha512",

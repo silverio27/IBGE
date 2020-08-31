@@ -1,9 +1,9 @@
 SF:C:\Users\Lucas\Teste\IBGE\Ibge.Domain\RegionIbgeContext\Queries\RegionQueries.cs
 FN:9,System.Linq.Expressions.Expression`1<System.Func`2<Ibge.Domain.RegionIbgeContext.Entities.Region,System.Boolean>> Ibge.Domain.RegionIbgeContext.Queries.RegionQueries::GetRegionById(System.Int32)
-FNDA:3,System.Linq.Expressions.Expression`1<System.Func`2<Ibge.Domain.RegionIbgeContext.Entities.Region,System.Boolean>> Ibge.Domain.RegionIbgeContext.Queries.RegionQueries::GetRegionById(System.Int32)
-DA:10,3
-DA:11,3
-DA:12,3
+FNDA:9,System.Linq.Expressions.Expression`1<System.Func`2<Ibge.Domain.RegionIbgeContext.Entities.Region,System.Boolean>> Ibge.Domain.RegionIbgeContext.Queries.RegionQueries::GetRegionById(System.Int32)
+DA:10,9
+DA:11,9
+DA:12,9
 LF:3
 LH:3
 BRF:0
@@ -13,8 +13,8 @@ FNH:1
 end_of_record
 SF:C:\Users\Lucas\Teste\IBGE\Ibge.Domain\RegionIbgeContext\Mapping\AutoMapperConfiguration.cs
 FN:18,AutoMapper.IMapper Ibge.Domain.RegionIbgeContext.Mapping.AutoMapperConfiguration::get_Mapper()
-FNDA:3,AutoMapper.IMapper Ibge.Domain.RegionIbgeContext.Mapping.AutoMapperConfiguration::get_Mapper()
-DA:19,3
+FNDA:7,AutoMapper.IMapper Ibge.Domain.RegionIbgeContext.Mapping.AutoMapperConfiguration::get_Mapper()
+DA:19,7
 FN:7,System.Void Ibge.Domain.RegionIbgeContext.Mapping.AutoMapperConfiguration::.cctor()
 FNDA:1,System.Void Ibge.Domain.RegionIbgeContext.Mapping.AutoMapperConfiguration::.cctor()
 DA:8,1
@@ -59,28 +59,28 @@ FNH:1
 end_of_record
 SF:C:\Users\Lucas\Teste\IBGE\Ibge.Domain\RegionIbgeContext\Handlers\RegionHandler.cs
 FN:18,Ibge.Domain.RegionIbgeContext.Handlers.Contract.HandlerResult`1<Ibge.Domain.RegionIbgeContext.Commands.RegionCommand> Ibge.Domain.RegionIbgeContext.Handlers.RegionHandler::Handle(Ibge.Domain.RegionIbgeContext.Commands.RegionCommand)
-FNDA:5,Ibge.Domain.RegionIbgeContext.Handlers.Contract.HandlerResult`1<Ibge.Domain.RegionIbgeContext.Commands.RegionCommand> Ibge.Domain.RegionIbgeContext.Handlers.RegionHandler::Handle(Ibge.Domain.RegionIbgeContext.Commands.RegionCommand)
-DA:19,5
-DA:20,5
-DA:21,5
+FNDA:9,Ibge.Domain.RegionIbgeContext.Handlers.Contract.HandlerResult`1<Ibge.Domain.RegionIbgeContext.Commands.RegionCommand> Ibge.Domain.RegionIbgeContext.Handlers.RegionHandler::Handle(Ibge.Domain.RegionIbgeContext.Commands.RegionCommand)
+DA:19,9
+DA:20,9
+DA:21,9
 DA:22,2
 DA:23,2
-DA:25,3
-DA:27,3
+DA:25,7
+DA:27,7
 DA:28,2
 DA:29,2
-DA:31,1
-DA:33,1
-DA:34,5
+DA:31,5
+DA:33,5
+DA:34,9
 BRDA:21,16,0,2
-BRDA:21,16,1,3
+BRDA:21,16,1,7
 BRDA:27,59,0,2
-BRDA:27,59,1,1
+BRDA:27,59,1,5
 FN:13,System.Void Ibge.Domain.RegionIbgeContext.Handlers.RegionHandler::.ctor(Ibge.Domain.RegionIbgeContext.Repositories.IRegionRepository)
-FNDA:4,System.Void Ibge.Domain.RegionIbgeContext.Handlers.RegionHandler::.ctor(Ibge.Domain.RegionIbgeContext.Repositories.IRegionRepository)
-DA:14,4
-DA:15,4
-DA:16,4
+FNDA:7,System.Void Ibge.Domain.RegionIbgeContext.Handlers.RegionHandler::.ctor(Ibge.Domain.RegionIbgeContext.Repositories.IRegionRepository)
+DA:14,7
+DA:15,7
+DA:16,7
 LF:15
 LH:15
 BRF:4
@@ -90,58 +90,58 @@ FNH:2
 end_of_record
 SF:C:\Users\Lucas\Teste\IBGE\Ibge.Domain\RegionIbgeContext\Handlers\RegionIntegrationHandler.cs
 FN:15,System.Void Ibge.Domain.RegionIbgeContext.Handlers.RegionIntegrationHandler::.ctor(Ibge.Domain.RegionIbgeContext.Repositories.IRegionIbgeRepository,Ibge.Domain.RegionIbgeContext.Handlers.Contract.IHandler`1<Ibge.Domain.RegionIbgeContext.Commands.RegionCommand>)
-FNDA:0,System.Void Ibge.Domain.RegionIbgeContext.Handlers.RegionIntegrationHandler::.ctor(Ibge.Domain.RegionIbgeContext.Repositories.IRegionIbgeRepository,Ibge.Domain.RegionIbgeContext.Handlers.Contract.IHandler`1<Ibge.Domain.RegionIbgeContext.Commands.RegionCommand>)
-DA:16,0
-DA:17,0
-DA:18,0
-DA:19,0
-DA:20,0
-DA:21,0
-DA:22,0
+FNDA:6,System.Void Ibge.Domain.RegionIbgeContext.Handlers.RegionIntegrationHandler::.ctor(Ibge.Domain.RegionIbgeContext.Repositories.IRegionIbgeRepository,Ibge.Domain.RegionIbgeContext.Handlers.Contract.IHandler`1<Ibge.Domain.RegionIbgeContext.Commands.RegionCommand>)
+DA:16,6
+DA:17,6
+DA:18,6
+DA:19,6
+DA:20,6
+DA:21,6
+DA:22,6
 FN:24,System.Void Ibge.Domain.RegionIbgeContext.Handlers.RegionIntegrationHandler/<Execute>d__3::MoveNext()
-FNDA:0,System.Void Ibge.Domain.RegionIbgeContext.Handlers.RegionIntegrationHandler/<Execute>d__3::MoveNext()
-DA:25,0
-DA:26,0
-DA:27,0
-DA:29,0
-DA:30,0
-DA:31,0
-DA:32,0
-DA:35,0
-DA:36,0
-DA:37,0
-DA:38,0
-DA:39,0
-DA:40,0
-BRDA:29,174,0,0
-BRDA:29,174,1,0
-BRDA:35,302,1,0
-BRDA:35,302,0,0
+FNDA:3,System.Void Ibge.Domain.RegionIbgeContext.Handlers.RegionIntegrationHandler/<Execute>d__3::MoveNext()
+DA:25,3
+DA:26,3
+DA:27,3
+DA:29,3
+DA:30,2
+DA:31,2
+DA:32,2
+DA:35,13
+DA:36,5
+DA:37,5
+DA:38,5
+DA:39,1
+DA:40,3
+BRDA:29,174,0,2
+BRDA:29,174,1,1
+BRDA:35,302,1,5
+BRDA:35,302,0,1
 LF:20
-LH:0
+LH:20
 BRF:4
-BRH:0
+BRH:4
 FNF:2
-FNH:0
+FNH:2
 end_of_record
 SF:C:\Users\Lucas\Teste\IBGE\Ibge.Domain\RegionIbgeContext\Handlers\Contract\HandlerResult.cs
 FN:11,System.Boolean Ibge.Domain.RegionIbgeContext.Handlers.Contract.HandlerResult`1::get_Success()
-FNDA:13,System.Boolean Ibge.Domain.RegionIbgeContext.Handlers.Contract.HandlerResult`1::get_Success()
-DA:12,13
+FNDA:17,System.Boolean Ibge.Domain.RegionIbgeContext.Handlers.Contract.HandlerResult`1::get_Success()
+DA:12,17
 FN:12,System.String Ibge.Domain.RegionIbgeContext.Handlers.Contract.HandlerResult`1::get_Message()
-FNDA:12,System.String Ibge.Domain.RegionIbgeContext.Handlers.Contract.HandlerResult`1::get_Message()
-DA:13,12
+FNDA:16,System.String Ibge.Domain.RegionIbgeContext.Handlers.Contract.HandlerResult`1::get_Message()
+DA:13,16
 FN:13,T Ibge.Domain.RegionIbgeContext.Handlers.Contract.HandlerResult`1::get_Data()
-FNDA:10,T Ibge.Domain.RegionIbgeContext.Handlers.Contract.HandlerResult`1::get_Data()
-DA:14,10
+FNDA:14,T Ibge.Domain.RegionIbgeContext.Handlers.Contract.HandlerResult`1::get_Data()
+DA:14,14
 FN:4,System.Void Ibge.Domain.RegionIbgeContext.Handlers.Contract.HandlerResult`1::.ctor(System.String,T,System.Boolean)
-FNDA:9,System.Void Ibge.Domain.RegionIbgeContext.Handlers.Contract.HandlerResult`1::.ctor(System.String,T,System.Boolean)
-DA:5,9
-DA:6,9
-DA:7,9
-DA:8,9
-DA:9,9
-DA:10,9
+FNDA:13,System.Void Ibge.Domain.RegionIbgeContext.Handlers.Contract.HandlerResult`1::.ctor(System.String,T,System.Boolean)
+DA:5,13
+DA:6,13
+DA:7,13
+DA:8,13
+DA:9,13
+DA:10,13
 LF:9
 LH:9
 BRF:0
@@ -151,21 +151,21 @@ FNH:4
 end_of_record
 SF:C:\Users\Lucas\Teste\IBGE\Ibge.Domain\RegionIbgeContext\Enums\IbgeEndPoints.cs
 FN:5,System.String Ibge.Domain.RegionIbgeContext.Enums.IbgeEndPoints::get_Value()
-FNDA:4,System.String Ibge.Domain.RegionIbgeContext.Enums.IbgeEndPoints::get_Value()
-DA:6,4
+FNDA:16,System.String Ibge.Domain.RegionIbgeContext.Enums.IbgeEndPoints::get_Value()
+DA:6,16
 FN:9,Ibge.Domain.RegionIbgeContext.Enums.IbgeEndPoints Ibge.Domain.RegionIbgeContext.Enums.IbgeEndPoints::get_RegionUrl()
-FNDA:1,Ibge.Domain.RegionIbgeContext.Enums.IbgeEndPoints Ibge.Domain.RegionIbgeContext.Enums.IbgeEndPoints::get_RegionUrl()
-DA:10,1
-DA:11,1
-DA:12,1
+FNDA:4,Ibge.Domain.RegionIbgeContext.Enums.IbgeEndPoints Ibge.Domain.RegionIbgeContext.Enums.IbgeEndPoints::get_RegionUrl()
+DA:10,4
+DA:11,4
+DA:12,4
 FN:16,Ibge.Domain.RegionIbgeContext.Enums.IbgeEndPoints Ibge.Domain.RegionIbgeContext.Enums.IbgeEndPoints::get_VoidUrl()
-FNDA:1,Ibge.Domain.RegionIbgeContext.Enums.IbgeEndPoints Ibge.Domain.RegionIbgeContext.Enums.IbgeEndPoints::get_VoidUrl()
-DA:17,1
-DA:18,1
-DA:19,1
+FNDA:4,Ibge.Domain.RegionIbgeContext.Enums.IbgeEndPoints Ibge.Domain.RegionIbgeContext.Enums.IbgeEndPoints::get_VoidUrl()
+DA:17,4
+DA:18,4
+DA:19,4
 FN:4,System.Void Ibge.Domain.RegionIbgeContext.Enums.IbgeEndPoints::.ctor(System.String)
-FNDA:8,System.Void Ibge.Domain.RegionIbgeContext.Enums.IbgeEndPoints::.ctor(System.String)
-DA:5,8
+FNDA:32,System.Void Ibge.Domain.RegionIbgeContext.Enums.IbgeEndPoints::.ctor(System.String)
+DA:5,32
 LF:8
 LH:8
 BRF:0
@@ -175,27 +175,27 @@ FNH:4
 end_of_record
 SF:C:\Users\Lucas\Teste\IBGE\Ibge.Domain\RegionIbgeContext\Entities\Region.cs
 FN:17,System.Int32 Ibge.Domain.RegionIbgeContext.Entities.Region::get_Id()
-FNDA:10,System.Int32 Ibge.Domain.RegionIbgeContext.Entities.Region::get_Id()
-DA:18,10
+FNDA:38,System.Int32 Ibge.Domain.RegionIbgeContext.Entities.Region::get_Id()
+DA:18,38
 FN:18,System.String Ibge.Domain.RegionIbgeContext.Entities.Region::get_Initials()
-FNDA:7,System.String Ibge.Domain.RegionIbgeContext.Entities.Region::get_Initials()
-DA:19,7
+FNDA:27,System.String Ibge.Domain.RegionIbgeContext.Entities.Region::get_Initials()
+DA:19,27
 FN:19,System.String Ibge.Domain.RegionIbgeContext.Entities.Region::get_Name()
-FNDA:7,System.String Ibge.Domain.RegionIbgeContext.Entities.Region::get_Name()
-DA:20,7
+FNDA:29,System.String Ibge.Domain.RegionIbgeContext.Entities.Region::get_Name()
+DA:20,29
 FN:6,System.Void Ibge.Domain.RegionIbgeContext.Entities.Region::.ctor(System.Int32,System.String,System.String)
-FNDA:3,System.Void Ibge.Domain.RegionIbgeContext.Entities.Region::.ctor(System.Int32,System.String,System.String)
-DA:7,3
-DA:8,3
-DA:9,3
-DA:10,3
-DA:11,3
-DA:12,3
+FNDA:19,System.Void Ibge.Domain.RegionIbgeContext.Entities.Region::.ctor(System.Int32,System.String,System.String)
+DA:7,19
+DA:8,19
+DA:9,19
+DA:10,19
+DA:11,19
+DA:12,19
 FN:12,System.Void Ibge.Domain.RegionIbgeContext.Entities.Region::.ctor()
-FNDA:3,System.Void Ibge.Domain.RegionIbgeContext.Entities.Region::.ctor()
-DA:13,3
-DA:14,3
-DA:16,3
+FNDA:7,System.Void Ibge.Domain.RegionIbgeContext.Entities.Region::.ctor()
+DA:13,7
+DA:14,7
+DA:16,7
 LF:12
 LH:12
 BRF:0
@@ -205,106 +205,112 @@ FNH:5
 end_of_record
 SF:C:\Users\Lucas\Teste\IBGE\Ibge.Domain\RegionIbgeContext\Commands\RegionCommand.cs
 FN:19,System.Int32 Ibge.Domain.RegionIbgeContext.Commands.RegionCommand::get_id()
-FNDA:26,System.Int32 Ibge.Domain.RegionIbgeContext.Commands.RegionCommand::get_id()
-DA:20,26
+FNDA:43,System.Int32 Ibge.Domain.RegionIbgeContext.Commands.RegionCommand::get_id()
+DA:20,43
 FN:20,System.String Ibge.Domain.RegionIbgeContext.Commands.RegionCommand::get_sigla()
-FNDA:26,System.String Ibge.Domain.RegionIbgeContext.Commands.RegionCommand::get_sigla()
-DA:21,26
+FNDA:43,System.String Ibge.Domain.RegionIbgeContext.Commands.RegionCommand::get_sigla()
+DA:21,43
 FN:21,System.String Ibge.Domain.RegionIbgeContext.Commands.RegionCommand::get_nome()
-FNDA:26,System.String Ibge.Domain.RegionIbgeContext.Commands.RegionCommand::get_nome()
-DA:22,26
+FNDA:43,System.String Ibge.Domain.RegionIbgeContext.Commands.RegionCommand::get_nome()
+DA:22,43
 FN:24,System.Void Ibge.Domain.RegionIbgeContext.Commands.RegionCommand::Validate()
-FNDA:10,System.Void Ibge.Domain.RegionIbgeContext.Commands.RegionCommand::Validate()
-DA:25,10
-DA:26,10
-DA:27,10
-DA:28,10
-DA:29,10
-DA:30,10
-DA:31,10
-DA:32,10
+FNDA:14,System.Void Ibge.Domain.RegionIbgeContext.Commands.RegionCommand::Validate()
+DA:25,14
+DA:26,14
+DA:27,14
+DA:28,14
+DA:29,14
+DA:30,14
+DA:31,14
+DA:32,14
 FN:8,System.Void Ibge.Domain.RegionIbgeContext.Commands.RegionCommand::.ctor()
-FNDA:0,System.Void Ibge.Domain.RegionIbgeContext.Commands.RegionCommand::.ctor()
-DA:9,0
-DA:10,0
-DA:12,0
+FNDA:5,System.Void Ibge.Domain.RegionIbgeContext.Commands.RegionCommand::.ctor()
+DA:9,5
+DA:10,5
+DA:12,5
 FN:12,System.Void Ibge.Domain.RegionIbgeContext.Commands.RegionCommand::.ctor(System.Int32,System.String,System.String)
-FNDA:13,System.Void Ibge.Domain.RegionIbgeContext.Commands.RegionCommand::.ctor(System.Int32,System.String,System.String)
-DA:13,13
-DA:14,13
-DA:15,13
-DA:16,13
-DA:17,13
-DA:18,13
+FNDA:17,System.Void Ibge.Domain.RegionIbgeContext.Commands.RegionCommand::.ctor(System.Int32,System.String,System.String)
+DA:13,17
+DA:14,17
+DA:15,17
+DA:16,17
+DA:17,17
+DA:18,17
 LF:20
-LH:17
+LH:20
 BRF:0
 BRH:0
 FNF:6
-FNH:5
+FNH:6
 end_of_record
 SF:C:\Users\Lucas\Teste\IBGE\Ibge.Domain.Infra\Repositories\RegionIbgeRepository.cs
 FN:15,System.Void Ibge.Domain.Infra.Repositories.RegionIbgeRepository::.ctor(Ibge.Domain.RegionIbgeContext.Enums.IbgeEndPoints)
-FNDA:0,System.Void Ibge.Domain.Infra.Repositories.RegionIbgeRepository::.ctor(Ibge.Domain.RegionIbgeContext.Enums.IbgeEndPoints)
-DA:16,0
-DA:17,0
-DA:18,0
-DA:19,0
-DA:20,0
+FNDA:6,System.Void Ibge.Domain.Infra.Repositories.RegionIbgeRepository::.ctor(Ibge.Domain.RegionIbgeContext.Enums.IbgeEndPoints)
+DA:16,6
+DA:17,6
+DA:18,6
+DA:19,6
+DA:20,6
 FN:22,System.Void Ibge.Domain.Infra.Repositories.RegionIbgeRepository/<Get>d__3::MoveNext()
-FNDA:0,System.Void Ibge.Domain.Infra.Repositories.RegionIbgeRepository/<Get>d__3::MoveNext()
-DA:23,0
-DA:24,0
-DA:25,0
-DA:26,0
-DA:27,0
-DA:28,0
-DA:31,0
-DA:32,0
-BRDA:25,182,0,0
-BRDA:25,182,1,0
-LF:13
-LH:0
-BRF:2
-BRH:0
+FNDA:3,System.Void Ibge.Domain.Infra.Repositories.RegionIbgeRepository/<Get>d__3::MoveNext()
+DA:23,3
+DA:24,3
+DA:25,3
+DA:26,2
+DA:28,1
+DA:29,1
+DA:30,1
+DA:31,1
+DA:32,1
+DA:35,0
+DA:36,3
+BRDA:25,58,0,2
+BRDA:25,58,1,1
+BRDA:29,229,0,1
+BRDA:29,229,1,0
+LF:16
+LH:15
+BRF:4
+BRH:3
 FNF:2
-FNH:0
+FNH:2
 end_of_record
 SF:C:\Users\Lucas\Teste\IBGE\Ibge.Domain.Infra\Repositories\RegionRepository.cs
-FN:19,System.Void Ibge.Domain.Infra.Repositories.RegionRepository::Create(Ibge.Domain.RegionIbgeContext.Entities.Region)
-FNDA:1,System.Void Ibge.Domain.Infra.Repositories.RegionRepository::Create(Ibge.Domain.RegionIbgeContext.Entities.Region)
-DA:20,1
-DA:21,1
-DA:22,1
-DA:23,1
-FN:25,System.Boolean Ibge.Domain.Infra.Repositories.RegionRepository::Exist(Ibge.Domain.RegionIbgeContext.Entities.Region)
-FNDA:3,System.Boolean Ibge.Domain.Infra.Repositories.RegionRepository::Exist(Ibge.Domain.RegionIbgeContext.Entities.Region)
-DA:26,3
-DA:27,3
-DA:28,3
-FN:30,System.Collections.Generic.IEnumerable`1<Ibge.Domain.RegionIbgeContext.Entities.Region> Ibge.Domain.Infra.Repositories.RegionRepository::Get()
-FNDA:0,System.Collections.Generic.IEnumerable`1<Ibge.Domain.RegionIbgeContext.Entities.Region> Ibge.Domain.Infra.Repositories.RegionRepository::Get()
-DA:31,0
-DA:32,0
-DA:33,0
-FN:35,Ibge.Domain.RegionIbgeContext.Entities.Region Ibge.Domain.Infra.Repositories.RegionRepository::Get(System.Int32)
-FNDA:0,Ibge.Domain.RegionIbgeContext.Entities.Region Ibge.Domain.Infra.Repositories.RegionRepository::Get(System.Int32)
-DA:36,0
-DA:37,0
-DA:38,0
-DA:39,0
+FN:19,Ibge.Domain.RegionIbgeContext.Entities.Region Ibge.Domain.Infra.Repositories.RegionRepository::Create(Ibge.Domain.RegionIbgeContext.Entities.Region)
+FNDA:9,Ibge.Domain.RegionIbgeContext.Entities.Region Ibge.Domain.Infra.Repositories.RegionRepository::Create(Ibge.Domain.RegionIbgeContext.Entities.Region)
+DA:20,9
+DA:21,9
+DA:22,9
+DA:23,9
+DA:24,9
+FN:26,System.Boolean Ibge.Domain.Infra.Repositories.RegionRepository::Exist(Ibge.Domain.RegionIbgeContext.Entities.Region)
+FNDA:8,System.Boolean Ibge.Domain.Infra.Repositories.RegionRepository::Exist(Ibge.Domain.RegionIbgeContext.Entities.Region)
+DA:27,8
+DA:28,8
+DA:29,8
+FN:31,System.Collections.Generic.IEnumerable`1<Ibge.Domain.RegionIbgeContext.Entities.Region> Ibge.Domain.Infra.Repositories.RegionRepository::Get()
+FNDA:1,System.Collections.Generic.IEnumerable`1<Ibge.Domain.RegionIbgeContext.Entities.Region> Ibge.Domain.Infra.Repositories.RegionRepository::Get()
+DA:32,1
+DA:33,1
+DA:34,1
+FN:36,Ibge.Domain.RegionIbgeContext.Entities.Region Ibge.Domain.Infra.Repositories.RegionRepository::Get(System.Int32)
+FNDA:1,Ibge.Domain.RegionIbgeContext.Entities.Region Ibge.Domain.Infra.Repositories.RegionRepository::Get(System.Int32)
+DA:37,1
+DA:38,1
+DA:39,1
+DA:40,1
 FN:13,System.Void Ibge.Domain.Infra.Repositories.RegionRepository::.ctor(Ibge.Domain.Infra.Contexts.DataContext)
-FNDA:4,System.Void Ibge.Domain.Infra.Repositories.RegionRepository::.ctor(Ibge.Domain.Infra.Contexts.DataContext)
-DA:14,4
-DA:15,4
-DA:16,4
-DA:17,4
-LF:18
-LH:11
+FNDA:11,System.Void Ibge.Domain.Infra.Repositories.RegionRepository::.ctor(Ibge.Domain.Infra.Contexts.DataContext)
+DA:14,11
+DA:15,11
+DA:16,11
+DA:17,11
+LF:19
+LH:19
 BRF:0
 BRH:0
 FNF:5
-FNH:3
+FNH:5
 end_of_record
 SF:C:\Users\Lucas\Teste\IBGE\Ibge.Domain.Infra\Migrations\20200822062940_InitialCreate.cs
 FN:7,System.Void Ibge.Domain.Infra.Migrations.InitialCreate::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
@@ -405,8 +411,8 @@ DA:9,0
 DA:10,0
 DA:11,0
 FN:11,Microsoft.EntityFrameworkCore.DbSet`1<Ibge.Domain.RegionIbgeContext.Entities.Region> Ibge.Domain.Infra.Contexts.DataContext::get_Region()
-FNDA:8,Microsoft.EntityFrameworkCore.DbSet`1<Ibge.Domain.RegionIbgeContext.Entities.Region> Ibge.Domain.Infra.Contexts.DataContext::get_Region()
-DA:12,8
+FNDA:30,Microsoft.EntityFrameworkCore.DbSet`1<Ibge.Domain.RegionIbgeContext.Entities.Region> Ibge.Domain.Infra.Contexts.DataContext::get_Region()
+DA:12,30
 LF:4
 LH:1
 BRF:0

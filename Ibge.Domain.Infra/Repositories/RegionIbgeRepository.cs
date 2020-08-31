@@ -21,14 +21,18 @@ namespace Ibge.Domain.Infra.Repositories
 
         public async Task<IEnumerable<RegionCommand>> Get()
         {
-            var response = await _httpClient.GetAsync(_url);
-            if (response.IsSuccessStatusCode)
+            var response = new List<RegionCommand>();
+            if (string.IsNullOrEmpty(_url))
+                return response;
+                
+            var result = await _httpClient.GetAsync(_url);
+            if (result.IsSuccessStatusCode)
             {
-                var content = await response.Content.ReadAsStringAsync();
+                var content = await result.Content.ReadAsStringAsync();
                 return JsonSerializer.Deserialize<IEnumerable<RegionCommand>>(content);
             }
 
-            return new List<RegionCommand>();
+            return response;
         }
     }
 }

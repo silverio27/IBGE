@@ -7,7 +7,7 @@ namespace Ibge.Domain.RegionIbgeContext.Repositories
     {
          IEnumerable<Region> Get();
          Region Get(int id);
-         void Create(Region region);
+         Region Create(Region region);
          bool Exist(Region region);
     }
 }

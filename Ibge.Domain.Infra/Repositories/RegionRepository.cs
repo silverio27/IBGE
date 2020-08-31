@@ -16,10 +16,11 @@ namespace Ibge.Domain.Infra.Repositories
             _context = context;
         }
 
-        public void Create(Region region)
+        public Region Create(Region region)
         {
             _context.Region.Add(region);
             _context.SaveChanges();
+            return region;
         }
 
         public bool Exist(Region region)
