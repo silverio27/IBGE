@@ -13,6 +13,7 @@ namespace Ibge.Domain.Infra.Repositories
         HttpClient _httpClient;
         private string _url;
 
+        //FIXME: Pass IbgeEndPoints in method
         public RegionIbgeRepository(IbgeEndPoints url)
         {
             _httpClient = new HttpClient();
@@ -24,7 +25,7 @@ namespace Ibge.Domain.Infra.Repositories
             var response = new List<RegionCommand>();
             if (string.IsNullOrEmpty(_url))
                 return response;
-                
+
             var result = await _httpClient.GetAsync(_url);
             if (result.IsSuccessStatusCode)
             {

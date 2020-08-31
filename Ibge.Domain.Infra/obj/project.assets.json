@@ -5894,11 +5894,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Lucas\\Teste\\IBGE\\Ibge.Domain.Infra\\Ibge.Domain.Infra.csproj",
+      "projectUniqueName": "C:\\Users\\Lucas\\Teste\\IBGE\\Ibge.Domain.Infra\\Ibge.Domain.Infra.csproj",
       "projectName": "Ibge.Domain.Infra",
-      "projectPath": "c:\\Users\\Lucas\\Teste\\IBGE\\Ibge.Domain.Infra\\Ibge.Domain.Infra.csproj",
+      "projectPath": "C:\\Users\\Lucas\\Teste\\IBGE\\Ibge.Domain.Infra\\Ibge.Domain.Infra.csproj",
       "packagesPath": "C:\\Users\\Lucas\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Lucas\\Teste\\IBGE\\Ibge.Domain.Infra\\obj\\",
+      "outputPath": "C:\\Users\\Lucas\\Teste\\IBGE\\Ibge.Domain.Infra\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5915,8 +5915,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "c:\\Users\\Lucas\\Teste\\IBGE\\Ibge.Domain\\Ibge.Domain.csproj": {
-              "projectPath": "c:\\Users\\Lucas\\Teste\\IBGE\\Ibge.Domain\\Ibge.Domain.csproj"
+            "C:\\Users\\Lucas\\Teste\\IBGE\\Ibge.Domain\\Ibge.Domain.csproj": {
+              "projectPath": "C:\\Users\\Lucas\\Teste\\IBGE\\Ibge.Domain\\Ibge.Domain.csproj"
             }
           }
         }
