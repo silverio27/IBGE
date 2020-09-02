@@ -16,8 +16,9 @@ namespace Ibge.Domain.ConsoleApp.Controller
     {
         public static async Task RegionIbgeRequestManualTest()
         {
-            RegionIbgeRepository repository = new RegionIbgeRepository(IbgeEndPoints.RegionUrl);
-            var response = await repository.Get();
+            var http = new HttpClient();
+            RegionIbgeRepository repository = new RegionIbgeRepository(http);
+            var response = await repository.Get(IbgeEndPoints.RegionUrl);
             Console.WriteLine("Retorno da api do IBGE");
             foreach (var item in response)
                 Console.WriteLine("{0}, {1}, {2}", item.id, item.nome, item.sigla);
@@ -30,7 +31,7 @@ namespace Ibge.Domain.ConsoleApp.Controller
             var context = new DataContext();
             var repository = new RegionRepository(context);
             var handler = new RegionHandler(repository);
-            var region = new RegionCommand(1, "I", "N");
+            var region = new CreateRegionCommand(1, "I", "N");
 
             var res = handler.Handle(region);
             Console.WriteLine("Comando válido: {0}, Mensagem: {1}", res.Success, res.Message);
@@ -39,19 +40,19 @@ namespace Ibge.Domain.ConsoleApp.Controller
 
         public static async Task ExecuteFacadeManualTest()
         {
+            var http = new HttpClient();
+            var externalRepository = new RegionIbgeRepository(http);
 
-            var externalRepository = new RegionIbgeRepository(IbgeEndPoints.RegionUrl);
-            
             var context = new DataContext();
             var repository = new RegionRepository(context);
             var handler = new RegionHandler(repository);
 
             var handle = new RegionIntegrationHandler(externalRepository, handler);
             var result = await handle.Execute();
-            foreach (var item in result)            
+            foreach (var item in result)
                 Console.WriteLine("incluído: {0}, Message: {1}, Nome: {2}",
                     item.Success, item.Message, item.Data.nome);
-            
+
 
 
         }

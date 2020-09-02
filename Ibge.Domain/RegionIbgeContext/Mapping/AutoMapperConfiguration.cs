@@ -1,5 +1,6 @@
 using System;
 using AutoMapper;
+using Ibge.Domain.RegionIbgeContext.Mapping.Profiles;
 
 namespace Ibge.Domain.RegionIbgeContext.Mapping
 {
@@ -9,7 +10,6 @@ namespace Ibge.Domain.RegionIbgeContext.Mapping
         {
             var config = new MapperConfiguration(cfg =>
             {
-                cfg.ShouldMapProperty = p => p.GetMethod.IsPublic || p.GetMethod.IsAssembly;
                 cfg.AddProfile(new RegionProfile());
             });
             var mapper = config.CreateMapper();

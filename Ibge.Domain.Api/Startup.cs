@@ -1,10 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Ibge.Domain.Infra.Contexts;
 using Ibge.Domain.Infra.Repositories;
+using Ibge.Domain.RegionIbgeContext.Commands;
 using Ibge.Domain.RegionIbgeContext.Handlers;
+using Ibge.Domain.RegionIbgeContext.Handlers.Contract;
 using Ibge.Domain.RegionIbgeContext.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -36,9 +39,10 @@ namespace Ibge.Domain.Api
                 .UseSqlServer(Configuration.GetConnectionString("desenvolvimento")));
 
                 services.AddScoped<IRegionRepository, RegionRepository>();
-                //TODO: Implements query ibge
-                //TODO: Implements integration handler
-                // services.AddScoped<IRegionIbgeRepository, RegionIbgeRepository>();
+                services.AddScoped<HttpClient, HttpClient>();
+                services.AddScoped<IRegionIbgeRepository, RegionIbgeRepository>();
+                services.AddScoped<IHandler<CreateRegionCommand>, RegionHandler>();
+                services.AddScoped<RegionIntegrationHandler, RegionIntegrationHandler>();
 
         }
 

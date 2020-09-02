@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lucas\\Teste\\IBGE\\Ibge.Domain\\Ibge.Domain.csproj": {}
+    "c:\\Users\\Lucas\\Teste\\IBGE\\Ibge.Domain\\Ibge.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lucas\\Teste\\IBGE\\Ibge.Domain\\Ibge.Domain.csproj": {
+    "c:\\Users\\Lucas\\Teste\\IBGE\\Ibge.Domain\\Ibge.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lucas\\Teste\\IBGE\\Ibge.Domain\\Ibge.Domain.csproj",
+        "projectUniqueName": "c:\\Users\\Lucas\\Teste\\IBGE\\Ibge.Domain\\Ibge.Domain.csproj",
         "projectName": "Ibge.Domain",
-        "projectPath": "C:\\Users\\Lucas\\Teste\\IBGE\\Ibge.Domain\\Ibge.Domain.csproj",
+        "projectPath": "c:\\Users\\Lucas\\Teste\\IBGE\\Ibge.Domain\\Ibge.Domain.csproj",
         "packagesPath": "C:\\Users\\Lucas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lucas\\Teste\\IBGE\\Ibge.Domain\\obj\\",
+        "outputPath": "c:\\Users\\Lucas\\Teste\\IBGE\\Ibge.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

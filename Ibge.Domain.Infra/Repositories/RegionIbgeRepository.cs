@@ -11,26 +11,23 @@ namespace Ibge.Domain.Infra.Repositories
     public class RegionIbgeRepository : IRegionIbgeRepository
     {
         HttpClient _httpClient;
-        private string _url;
-
-        //FIXME: Pass IbgeEndPoints in method
-        public RegionIbgeRepository(IbgeEndPoints url)
+        public RegionIbgeRepository(HttpClient httpClient)
         {
-            _httpClient = new HttpClient();
-            _url = url.Value;
+            _httpClient = httpClient;
         }
 
-        public async Task<IEnumerable<RegionCommand>> Get()
+        public async Task<IEnumerable<CreateRegionCommand>> Get(IbgeEndPoints endPoint)
         {
-            var response = new List<RegionCommand>();
-            if (string.IsNullOrEmpty(_url))
+            var url = endPoint.Value;
+            var response = new List<CreateRegionCommand>();
+            if (string.IsNullOrEmpty(url) || (_httpClient == null))
                 return response;
 
-            var result = await _httpClient.GetAsync(_url);
+            var result = await _httpClient.GetAsync(url);
             if (result.IsSuccessStatusCode)
             {
                 var content = await result.Content.ReadAsStringAsync();
-                return JsonSerializer.Deserialize<IEnumerable<RegionCommand>>(content);
+                return JsonSerializer.Deserialize<IEnumerable<CreateRegionCommand>>(content);
             }
 
             return response;

@@ -2,11 +2,11 @@ using Flunt.Notifications;
 using Flunt.Validations;
 using Ibge.Domain.RegionIbgeContext.Commands.Contracts;
 
-namespace Ibge.Domain.RegionIbgeContext.Commands
+namespace Ibge.Domain.RegionIbgeContext.Commands.Contracts
 {
-    public class RegionCommand : Notifiable, ICommand
+    public abstract class RegionCommand : Notifiable, ICommand
     {
-        private RegionCommand()
+        public RegionCommand()
         {
 
         }
