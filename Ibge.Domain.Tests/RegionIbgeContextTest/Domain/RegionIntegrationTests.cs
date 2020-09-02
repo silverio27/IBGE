@@ -1,4 +1,5 @@
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Ibge.Domain.Infra.Repositories;
 using Ibge.Domain.RegionIbgeContext.Commands;
@@ -16,18 +17,20 @@ namespace Ibge.Domain.Tests.RegionIbgeContextTest.Domain
         IRegionIbgeRepository invalidRegionIbgeRepository;
         IRegionIbgeRepository validRegionIbgeRepository;
         IRegionRepository fakeRepository;
-        IHandler<RegionCommand> handler;
+        IHandler<CreateRegionCommand> handler;
         RegionIntegrationHandler invalidIntegrationHandler;
         RegionIntegrationHandler validIntegrationHandler;
+        HttpClient _http;
         public RegionIntegrationTests()
         {
             fakeRepository = new RegionRepository(new FakeContext());
             handler = new RegionHandler(fakeRepository);
+            _http = new HttpClient();
             
-            invalidRegionIbgeRepository = new RegionIbgeRepository(IbgeEndPoints.VoidUrl);
+            invalidRegionIbgeRepository = new RegionIbgeRepository(null);
             invalidIntegrationHandler = new RegionIntegrationHandler(invalidRegionIbgeRepository, handler);
             
-            validRegionIbgeRepository = new RegionIbgeRepository(IbgeEndPoints.RegionUrl);
+            validRegionIbgeRepository = new RegionIbgeRepository(_http);
             validIntegrationHandler = new RegionIntegrationHandler(validRegionIbgeRepository, handler);
         }
 

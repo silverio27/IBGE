@@ -12,20 +12,35 @@ namespace Ibge.Domain.Tests.RegionIbgeContextTest.Domain
     public class RegionHandlerTests
     {
         private IRegionRepository _repository;
-        private RegionCommand firstValidCommand = new RegionCommand(3, "SP", "São Paulo");
-         private RegionCommand secondValidCommand = new RegionCommand(4, "RJ", "Rio de Janeiro");
-        private RegionCommand invalidCommand = new RegionCommand(0, "RJ", "Rio de Janeiro");
+        private CreateRegionCommand firstValidCommand = new CreateRegionCommand(3, "SP", "São Paulo");
+        private CreateRegionCommand secondValidCommand = new CreateRegionCommand(4, "RJ", "Rio de Janeiro");
+        private CreateRegionCommand invalidCommand = new CreateRegionCommand(0, "RJ", "Rio de Janeiro");
+        private UpdateRegionCommand updateValidCommand = new UpdateRegionCommand(4, "RJ", "Rio de Janeiro");
+        private DeleteRegionCommand deleteValidCommand = new DeleteRegionCommand(4, "RJ", "Rio de Janeiro");
         private RegionHandler handlerValid;
 
         public RegionHandlerTests()
         {
             _repository = new RegionRepository(new FakeContext());
             handlerValid = new RegionHandler(_repository);
+            handlerValid.Handle(secondValidCommand);
         }
         [Fact]
-        public void DadoUmComandoValido()
+        public void DadoUmComandoValidoParaCriacao()
         {
             var result = handlerValid.Handle(firstValidCommand);
+            Assert.True(result.Success);
+        }
+        [Fact]
+        public void DadoUmComandoValidoParaAtualizacao()
+        {
+            var result = handlerValid.Handle(updateValidCommand);
+            Assert.True(result.Success);
+        }
+        [Fact]
+        public void DadoUmComandoValidoParaDelecao()
+        {
+            var result = handlerValid.Handle(deleteValidCommand);
             Assert.True(result.Success);
         }
         [Fact]
