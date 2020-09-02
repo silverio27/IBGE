@@ -16,7 +16,11 @@ namespace Ibge.Domain.Tests.RegionIbgeContextTest.Domain
         private CreateRegionCommand secondValidCommand = new CreateRegionCommand(4, "RJ", "Rio de Janeiro");
         private CreateRegionCommand invalidCommand = new CreateRegionCommand(0, "RJ", "Rio de Janeiro");
         private UpdateRegionCommand updateValidCommand = new UpdateRegionCommand(4, "RJ", "Rio de Janeiro");
+        private UpdateRegionCommand updateInvalidCommand = new UpdateRegionCommand(0, "RJ", "Rio de Janeiro");
+        private UpdateRegionCommand updateInexistCommand = new UpdateRegionCommand(100, "RJ", "Rio de Janeiro");
         private DeleteRegionCommand deleteValidCommand = new DeleteRegionCommand(4, "RJ", "Rio de Janeiro");
+        private DeleteRegionCommand deleteInvalidCommand = new DeleteRegionCommand(0, "RJ", "Rio de Janeiro");
+        private DeleteRegionCommand deleteInexistCommand = new DeleteRegionCommand(100, "RJ", "Rio de Janeiro");
         private RegionHandler handlerValid;
 
         public RegionHandlerTests()
@@ -44,16 +48,46 @@ namespace Ibge.Domain.Tests.RegionIbgeContextTest.Domain
             Assert.True(result.Success);
         }
         [Fact]
-        public void DadoUmComandoInválido()
+        public void DadoUmComandoInválidoParaCriacao()
         {
             var result = handlerValid.Handle(invalidCommand);
             Assert.False(result.Success);
         }
         [Fact]
-        public void DadoUmComandoInválidoORetornoPedeParaEspecificarMelhorARegiao()
+        public void DadoUmComandoInválidoParaAtualizacao()
+        {
+            var result = handlerValid.Handle(updateInvalidCommand);
+            Assert.False(result.Success);
+        }
+        [Fact]
+        public void DadoUmComandoInválidoParaDelecao()
+        {
+            var result = handlerValid.Handle(deleteInvalidCommand);
+            Assert.False(result.Success);
+        }
+        [Fact]
+        public void DadoUmComandoInválidoORetornoPedeParaEspecificarMelhorARegiaoParaCriacao()
         {
             var result = handlerValid.Handle(invalidCommand);
             Assert.Equal("especifique melhor a região", result.Message);
+        }
+        [Fact]
+        public void DadoUmComandoInválidoORetornoPedeParaEspecificarMelhorARegiaoParaAtualizacao()
+        {
+            var result = handlerValid.Handle(updateInvalidCommand);
+            Assert.Equal("especifique melhor a região", result.Message);
+        }
+        [Fact]
+        public void DadoUmComandoInválidoPoisARegiaoNaoExisteParaAtualizacao()
+        {
+            var result = handlerValid.Handle(updateInexistCommand);
+            Assert.Equal("A região não existe", result.Message);
+        }
+        [Fact]
+        public void DadoUmComandoInválidoPoisARegiaoNaoExisteParaDelecao()
+        {
+            var result = handlerValid.Handle(deleteInexistCommand);
+            Assert.Equal("A região não existe", result.Message);
         }
         [Fact]
         public void DadoUmComandoInválidoPoisARegiaoJaExiste()

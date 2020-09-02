@@ -7,5 +7,10 @@ namespace Ibge.Domain.RegionIbgeContext.Commands
         public DeleteRegionCommand(int id, string sigla, string nome) : base(id, sigla, nome)
         {
         }
+
+        private DeleteRegionCommand()
+        {
+            
+        }
     }
 }

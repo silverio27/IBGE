@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "rR4/w7HW/jWF62UgGdtC2DQ0FGBWUHJPiT53aWJjwTB/hjKyA8K1T/kZ6LrEyJ2RKCk33n44wTl4wQ7gOZXRwQ==",
+  "dgSpecHash": "1reIA1zkW7IR2gtGTkvdSBWNFkjZyrIubS6ESpPqcBDME9PW43AMxDGUfYs2VlVKa7/80VGHj2T9wTv0wXF3KA==",
   "success": true,
-  "projectFilePath": "C:\\Work\\IBGE\\Ibge.Domain\\Ibge.Domain.csproj",
+  "projectFilePath": "C:\\Users\\Lucas\\Teste\\IBGE\\Ibge.Domain\\Ibge.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Lucas Silverio\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
-    "C:\\Users\\Lucas Silverio\\.nuget\\packages\\flunt\\1.0.5\\flunt.1.0.5.nupkg.sha512",
-    "C:\\Users\\Lucas Silverio\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\Lucas Silverio\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
+    "C:\\Users\\Lucas\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
+    "C:\\Users\\Lucas\\.nuget\\packages\\flunt\\1.0.5\\flunt.1.0.5.nupkg.sha512",
+    "C:\\Users\\Lucas\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Lucas\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

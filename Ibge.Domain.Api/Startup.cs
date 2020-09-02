@@ -42,6 +42,8 @@ namespace Ibge.Domain.Api
                 services.AddScoped<HttpClient, HttpClient>();
                 services.AddScoped<IRegionIbgeRepository, RegionIbgeRepository>();
                 services.AddScoped<IHandler<CreateRegionCommand>, RegionHandler>();
+                services.AddScoped<IHandler<UpdateRegionCommand>, RegionHandler>();
+                services.AddScoped<IHandler<DeleteRegionCommand>, RegionHandler>();
                 services.AddScoped<RegionIntegrationHandler, RegionIntegrationHandler>();
 
         }
