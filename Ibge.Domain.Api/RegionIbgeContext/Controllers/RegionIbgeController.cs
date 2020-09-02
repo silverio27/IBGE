@@ -56,6 +56,7 @@ namespace Ibge.Domain.Api.RegionIbgeContext.Controllers
             [FromServices] RegionIntegrationHandler handler
         )
         {
+            
             return await handler.Execute();
         }
     }
