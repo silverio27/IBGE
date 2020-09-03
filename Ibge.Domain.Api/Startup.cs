@@ -9,6 +9,7 @@ using Ibge.Domain.RegionIbgeContext.Commands;
 using Ibge.Domain.RegionIbgeContext.Handlers;
 using Ibge.Domain.RegionIbgeContext.Handlers.Contract;
 using Ibge.Domain.RegionIbgeContext.Repositories;
+using Ibge.Domain.RegionIbgeContext.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -45,6 +46,7 @@ namespace Ibge.Domain.Api
                 services.AddScoped<IHandler<UpdateRegionCommand>, RegionHandler>();
                 services.AddScoped<IHandler<DeleteRegionCommand>, RegionHandler>();
                 services.AddScoped<RegionIntegrationHandler, RegionIntegrationHandler>();
+                services.AddScoped<IRegionDiffServices, RegionDiffServices>();
 
         }
 

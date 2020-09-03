@@ -2,9 +2,13 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Ibge.Domain.RegionIbgeContext.Commands;
 using Ibge.Domain.RegionIbgeContext.Entities;
+using Ibge.Domain.RegionIbgeContext.Enums;
 using Ibge.Domain.RegionIbgeContext.Handlers;
 using Ibge.Domain.RegionIbgeContext.Handlers.Contract;
+using Ibge.Domain.RegionIbgeContext.Mapping;
 using Ibge.Domain.RegionIbgeContext.Repositories;
+using Ibge.Domain.RegionIbgeContext.Services;
+using Ibge.Domain.RegionIbgeContext.ValueObject;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Ibge.Domain.Api.RegionIbgeContext.Controllers
@@ -17,6 +21,19 @@ namespace Ibge.Domain.Api.RegionIbgeContext.Controllers
             [FromServices] IRegionRepository repository)
         {
             return repository.Get();
+        }
+        [HttpGet("{id:int}")]
+        public Region GetById(
+            [FromServices] IRegionRepository repository,
+            int id)
+        {
+            return repository.Get(id);
+        }
+        [HttpGet("diff")]
+        public async Task<RegionDiffServices> GetDiff(
+            [FromServices] IRegionDiffServices services)
+        {
+            return await services.Get();
         }
         [HttpPost]
         public HandlerResult<CreateRegionCommand> Post(

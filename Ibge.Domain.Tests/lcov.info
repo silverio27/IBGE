@@ -1,3 +1,120 @@
+SF:C:\Users\Lucas\Teste\IBGE\Ibge.Domain\RegionIbgeContext\ValueObject\RegionDiff.cs
+FN:12,System.Int32 Ibge.Domain.RegionIbgeContext.ValueObject.RegionDiff::get_Id()
+FNDA:0,System.Int32 Ibge.Domain.RegionIbgeContext.ValueObject.RegionDiff::get_Id()
+DA:13,0
+FN:13,Ibge.Domain.RegionIbgeContext.Dtos.Diff Ibge.Domain.RegionIbgeContext.ValueObject.RegionDiff::get_Initials()
+FNDA:0,Ibge.Domain.RegionIbgeContext.Dtos.Diff Ibge.Domain.RegionIbgeContext.ValueObject.RegionDiff::get_Initials()
+DA:14,0
+FN:14,Ibge.Domain.RegionIbgeContext.Dtos.Diff Ibge.Domain.RegionIbgeContext.ValueObject.RegionDiff::get_Name()
+FNDA:0,Ibge.Domain.RegionIbgeContext.Dtos.Diff Ibge.Domain.RegionIbgeContext.ValueObject.RegionDiff::get_Name()
+DA:15,0
+FN:15,System.Boolean Ibge.Domain.RegionIbgeContext.ValueObject.RegionDiff::get_isDiferent()
+FNDA:0,System.Boolean Ibge.Domain.RegionIbgeContext.ValueObject.RegionDiff::get_isDiferent()
+DA:16,0
+FN:27,System.Collections.Generic.IEnumerable`1<Ibge.Domain.RegionIbgeContext.ValueObject.RegionDiff> Ibge.Domain.RegionIbgeContext.ValueObject.RegionDiff::GetDiffs()
+FNDA:0,System.Collections.Generic.IEnumerable`1<Ibge.Domain.RegionIbgeContext.ValueObject.RegionDiff> Ibge.Domain.RegionIbgeContext.ValueObject.RegionDiff::GetDiffs()
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:39,0
+DA:40,0
+FN:41,System.Collections.Generic.IEnumerable`1<Ibge.Domain.RegionIbgeContext.ValueObject.RegionDiff> Ibge.Domain.RegionIbgeContext.ValueObject.RegionDiff::GetInexistentsInIbge()
+FNDA:0,System.Collections.Generic.IEnumerable`1<Ibge.Domain.RegionIbgeContext.ValueObject.RegionDiff> Ibge.Domain.RegionIbgeContext.ValueObject.RegionDiff::GetInexistentsInIbge()
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:53,0
+DA:54,0
+FN:55,System.Collections.Generic.IEnumerable`1<Ibge.Domain.RegionIbgeContext.ValueObject.RegionDiff> Ibge.Domain.RegionIbgeContext.ValueObject.RegionDiff::GetInexistentsInLocal()
+FNDA:0,System.Collections.Generic.IEnumerable`1<Ibge.Domain.RegionIbgeContext.ValueObject.RegionDiff> Ibge.Domain.RegionIbgeContext.ValueObject.RegionDiff::GetInexistentsInLocal()
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:67,0
+DA:68,0
+FN:16,System.Void Ibge.Domain.RegionIbgeContext.ValueObject.RegionDiff::.ctor(System.Collections.Generic.IEnumerable`1<Ibge.Domain.RegionIbgeContext.Entities.Region>,System.Collections.Generic.IEnumerable`1<Ibge.Domain.RegionIbgeContext.Entities.Region>)
+FNDA:0,System.Void Ibge.Domain.RegionIbgeContext.ValueObject.RegionDiff::.ctor(System.Collections.Generic.IEnumerable`1<Ibge.Domain.RegionIbgeContext.Entities.Region>,System.Collections.Generic.IEnumerable`1<Ibge.Domain.RegionIbgeContext.Entities.Region>)
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+FN:22,System.Void Ibge.Domain.RegionIbgeContext.ValueObject.RegionDiff::.ctor()
+FNDA:0,System.Void Ibge.Domain.RegionIbgeContext.ValueObject.RegionDiff::.ctor()
+DA:23,0
+DA:24,0
+DA:26,0
+LF:48
+LH:0
+BRF:0
+BRH:0
+FNF:9
+FNH:0
+end_of_record
+SF:C:\Users\Lucas\Teste\IBGE\Ibge.Domain\RegionIbgeContext\Services\RegionDiffServices.cs
+FN:16,System.Collections.Generic.IEnumerable`1<Ibge.Domain.RegionIbgeContext.ValueObject.RegionDiff> Ibge.Domain.RegionIbgeContext.Services.RegionDiffServices::get_Diffs()
+FNDA:0,System.Collections.Generic.IEnumerable`1<Ibge.Domain.RegionIbgeContext.ValueObject.RegionDiff> Ibge.Domain.RegionIbgeContext.Services.RegionDiffServices::get_Diffs()
+DA:17,0
+FN:17,System.Collections.Generic.IEnumerable`1<Ibge.Domain.RegionIbgeContext.ValueObject.RegionDiff> Ibge.Domain.RegionIbgeContext.Services.RegionDiffServices::get_LocalInexistents()
+FNDA:0,System.Collections.Generic.IEnumerable`1<Ibge.Domain.RegionIbgeContext.ValueObject.RegionDiff> Ibge.Domain.RegionIbgeContext.Services.RegionDiffServices::get_LocalInexistents()
+DA:18,0
+FN:18,System.Collections.Generic.IEnumerable`1<Ibge.Domain.RegionIbgeContext.ValueObject.RegionDiff> Ibge.Domain.RegionIbgeContext.Services.RegionDiffServices::get_IbgeInexistents()
+FNDA:0,System.Collections.Generic.IEnumerable`1<Ibge.Domain.RegionIbgeContext.ValueObject.RegionDiff> Ibge.Domain.RegionIbgeContext.Services.RegionDiffServices::get_IbgeInexistents()
+DA:19,0
+FN:22,System.Void Ibge.Domain.RegionIbgeContext.Services.RegionDiffServices::.ctor(Ibge.Domain.RegionIbgeContext.Repositories.IRegionIbgeRepository,Ibge.Domain.RegionIbgeContext.Repositories.IRegionRepository)
+FNDA:0,System.Void Ibge.Domain.RegionIbgeContext.Services.RegionDiffServices::.ctor(Ibge.Domain.RegionIbgeContext.Repositories.IRegionIbgeRepository,Ibge.Domain.RegionIbgeContext.Repositories.IRegionRepository)
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+FN:29,System.Void Ibge.Domain.RegionIbgeContext.Services.RegionDiffServices::.ctor()
+FNDA:0,System.Void Ibge.Domain.RegionIbgeContext.Services.RegionDiffServices::.ctor()
+DA:30,0
+DA:31,0
+DA:32,0
+FN:33,System.Void Ibge.Domain.RegionIbgeContext.Services.RegionDiffServices/<Get>d__17::MoveNext()
+FNDA:0,System.Void Ibge.Domain.RegionIbgeContext.Services.RegionDiffServices/<Get>d__17::MoveNext()
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+LF:23
+LH:0
+BRF:0
+BRH:0
+FNF:6
+FNH:0
+end_of_record
 SF:C:\Users\Lucas\Teste\IBGE\Ibge.Domain\RegionIbgeContext\Queries\RegionQueries.cs
 FN:9,System.Linq.Expressions.Expression`1<System.Func`2<Ibge.Domain.RegionIbgeContext.Entities.Region,System.Boolean>> Ibge.Domain.RegionIbgeContext.Queries.RegionQueries::GetRegionById(System.Int32)
 FNDA:24,System.Linq.Expressions.Expression`1<System.Func`2<Ibge.Domain.RegionIbgeContext.Entities.Region,System.Boolean>> Ibge.Domain.RegionIbgeContext.Queries.RegionQueries::GetRegionById(System.Int32)
@@ -207,34 +324,63 @@ FNF:4
 FNH:4
 end_of_record
 SF:C:\Users\Lucas\Teste\IBGE\Ibge.Domain\RegionIbgeContext\Entities\Region.cs
-FN:17,System.Int32 Ibge.Domain.RegionIbgeContext.Entities.Region::get_Id()
+FN:19,System.Int32 Ibge.Domain.RegionIbgeContext.Entities.Region::get_Id()
 FNDA:68,System.Int32 Ibge.Domain.RegionIbgeContext.Entities.Region::get_Id()
-DA:18,68
-FN:18,System.String Ibge.Domain.RegionIbgeContext.Entities.Region::get_Initials()
+DA:20,68
+FN:20,System.String Ibge.Domain.RegionIbgeContext.Entities.Region::get_Initials()
 FNDA:42,System.String Ibge.Domain.RegionIbgeContext.Entities.Region::get_Initials()
-DA:19,42
-FN:19,System.String Ibge.Domain.RegionIbgeContext.Entities.Region::get_Name()
+DA:21,42
+FN:21,System.String Ibge.Domain.RegionIbgeContext.Entities.Region::get_Name()
 FNDA:44,System.String Ibge.Domain.RegionIbgeContext.Entities.Region::get_Name()
-DA:20,44
-FN:6,System.Void Ibge.Domain.RegionIbgeContext.Entities.Region::.ctor(System.Int32,System.String,System.String)
+DA:22,44
+FN:24,System.Boolean Ibge.Domain.RegionIbgeContext.Entities.Region::Equals(Ibge.Domain.RegionIbgeContext.Entities.Region)
+FNDA:0,System.Boolean Ibge.Domain.RegionIbgeContext.Entities.Region::Equals(Ibge.Domain.RegionIbgeContext.Entities.Region)
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+BRDA:26,18,0,0
+BRDA:26,18,1,0
+FN:8,System.Void Ibge.Domain.RegionIbgeContext.Entities.Region::.ctor(System.Int32,System.String,System.String)
 FNDA:19,System.Void Ibge.Domain.RegionIbgeContext.Entities.Region::.ctor(System.Int32,System.String,System.String)
-DA:7,19
-DA:8,19
 DA:9,19
 DA:10,19
 DA:11,19
 DA:12,19
-FN:12,System.Void Ibge.Domain.RegionIbgeContext.Entities.Region::.ctor()
+DA:13,19
+DA:14,19
+FN:14,System.Void Ibge.Domain.RegionIbgeContext.Entities.Region::.ctor()
 FNDA:23,System.Void Ibge.Domain.RegionIbgeContext.Entities.Region::.ctor()
-DA:13,23
-DA:14,23
+DA:15,23
 DA:16,23
-LF:12
+DA:18,23
+LF:16
 LH:12
+BRF:2
+BRH:0
+FNF:6
+FNH:5
+end_of_record
+SF:C:\Users\Lucas\Teste\IBGE\Ibge.Domain\RegionIbgeContext\Dtos\Diff.cs
+FN:10,System.String Ibge.Domain.RegionIbgeContext.Dtos.Diff::get_Local()
+FNDA:0,System.String Ibge.Domain.RegionIbgeContext.Dtos.Diff::get_Local()
+DA:11,0
+FN:11,System.String Ibge.Domain.RegionIbgeContext.Dtos.Diff::get_Ibge()
+FNDA:0,System.String Ibge.Domain.RegionIbgeContext.Dtos.Diff::get_Ibge()
+DA:12,0
+FN:5,System.Void Ibge.Domain.RegionIbgeContext.Dtos.Diff::.ctor(System.String,System.String)
+FNDA:0,System.Void Ibge.Domain.RegionIbgeContext.Dtos.Diff::.ctor(System.String,System.String)
+DA:6,0
+DA:7,0
+DA:8,0
+DA:9,0
+DA:10,0
+LF:7
+LH:0
 BRF:0
 BRH:0
-FNF:5
-FNH:5
+FNF:3
+FNH:0
 end_of_record
 SF:C:\Users\Lucas\Teste\IBGE\Ibge.Domain\RegionIbgeContext\Commands\CreateRegionCommand.cs
 FN:6,System.Void Ibge.Domain.RegionIbgeContext.Commands.CreateRegionCommand::.ctor(System.Int32,System.String,System.String)
