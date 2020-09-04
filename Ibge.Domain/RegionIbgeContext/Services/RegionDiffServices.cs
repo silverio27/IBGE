@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Ibge.Domain.RegionIbgeContext.Entities;
@@ -15,8 +14,8 @@ namespace Ibge.Domain.RegionIbgeContext.Services
         private readonly IRegionRepository _repository;
 
         public IEnumerable<RegionDiff> Diffs { get; private set; }
-        public IEnumerable<RegionDiff> LocalInexistents { get; private set; }
-        public IEnumerable<RegionDiff> IbgeInexistents { get; private set; }
+        public IEnumerable<Region> LocalNonexistent { get; private set; }
+        public IEnumerable<Region> IbgeNonexistent { get; private set; }
         private RegionDiff regionDiff;
 
 
@@ -37,8 +36,8 @@ namespace Ibge.Domain.RegionIbgeContext.Services
             var ibge = AutoMapperConfiguration.Mapper.Map<List<Region>>(request);
             regionDiff = new RegionDiff(local, ibge);
             this.Diffs = regionDiff.GetDiffs();
-            this.IbgeInexistents = regionDiff.GetInexistentsInIbge();
-            this.LocalInexistents = regionDiff.GetInexistentsInLocal();
+            this.IbgeNonexistent = regionDiff.GetNonexistentsInIbge();
+            this.LocalNonexistent = regionDiff.GetNonexistentInLocal();
             return this;
         }
     }
