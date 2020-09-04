@@ -8,9 +8,5 @@ namespace Ibge.Domain.RegionIbgeContext.Commands
         {
         }
 
-        private DeleteRegionCommand()
-        {
-            
-        }
     }
 }

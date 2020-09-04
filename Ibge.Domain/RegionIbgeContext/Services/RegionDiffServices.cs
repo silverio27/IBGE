@@ -26,9 +26,6 @@ namespace Ibge.Domain.RegionIbgeContext.Services
             this._ibgeRepository = ibgeRepository;
             this._repository = repository;
         }
-        private RegionDiffServices()
-        {
-        }
         public async Task<RegionDiffServices> Get()
         {
             var local = _repository.Get();

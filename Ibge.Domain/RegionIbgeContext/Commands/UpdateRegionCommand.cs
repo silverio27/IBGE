@@ -7,9 +7,5 @@ namespace Ibge.Domain.RegionIbgeContext.Commands
         public UpdateRegionCommand(int id, string sigla, string nome) : base(id, sigla, nome)
         {
         }
-        private UpdateRegionCommand()
-        {
-
-        }
     }
 }

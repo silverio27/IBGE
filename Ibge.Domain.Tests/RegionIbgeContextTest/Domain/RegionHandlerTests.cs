@@ -5,6 +5,7 @@ using Ibge.Domain.RegionIbgeContext.Handlers;
 using Ibge.Domain.RegionIbgeContext.Handlers.Contract;
 using Ibge.Domain.RegionIbgeContext.Repositories;
 using Ibge.Domain.Tests.Data;
+using Microsoft.EntityFrameworkCore;
 using Xunit;
 
 namespace Ibge.Domain.Tests.RegionIbgeContextTest.Domain
@@ -25,7 +26,9 @@ namespace Ibge.Domain.Tests.RegionIbgeContextTest.Domain
 
         public RegionHandlerTests()
         {
-            _repository = new RegionRepository(new FakeContext());
+            var context = new FakeContext();
+            _repository = new RegionRepository(context);
+            context.RemoveRange(_repository.Get());
             handlerValid = new RegionHandler(_repository);
             handlerValid.Handle(secondValidCommand);
         }

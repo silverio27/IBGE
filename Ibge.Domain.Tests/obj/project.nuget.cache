@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jYcAPuT1/26PKsqP0grdPN+9wYfLYC3fnY2kibscY3h8NBEJtXYCrHFhbQavBz9wNjbLd303iBg16+8/Ac1cug==",
+  "dgSpecHash": "LPyAkovzi/hzHOMl5KD0MmV2uYx+CUY03Ayd2KuHidDC5U33aMahYyG8B3ElSJSjoBw410FeAofZqBYpygKjLQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Lucas\\Teste\\IBGE\\Ibge.Domain.Tests\\Ibge.Domain.Tests.csproj",
+  "projectFilePath": "C:\\Users\\Lucas\\Teste\\IBGE\\Ibge.Domain.Tests\\Ibge.Domain.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lucas\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\Lucas\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
